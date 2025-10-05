@@ -2,18 +2,25 @@ import { Player } from "./components/Player"
 import { Sidebar } from "./components/Sidebar";
 import { Display } from "./components/Display";
 import { useContext } from "react";
-import { PlayerContext } from "./context/PlayerContext";
+import { useState } from "react";
+import { songsData } from "./assets/assets";
+import { useEffect } from "react";
 
 function App() {
-  const { audioPlayerRef, track} = useContext(PlayerContext);
+  console.log("APP");
+  console.log(songsData[0])
+  const [ currentSong, setCurrentSong ] = useState(songsData[1])
+
+  function updateSong(id){
+    setCurrentSong(songsData[id])
+  }
   return (
     <div className='h-screen bg-black'>
       <div className='h-[90%] flex'>
         <Sidebar />
-        <Display/>
+        <Display updateSong={updateSong}/>
       </div>
-      <Player />
-      {/* <audio src={track.file} ref={audioPlayerRef} preload='auto'></audio> */}
+      <Player currentSong={currentSong} setCurrentSong={setCurrentSong}/>
     </div>
   )
 }

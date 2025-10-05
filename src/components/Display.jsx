@@ -2,16 +2,16 @@ import { Home } from "./Home";
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AlbumDetails } from "./AlbumDetails";
 import { useRef } from 'react';
-import { albumsData } from "../assets/assets";
+import { albumsData, songsData } from "../assets/assets";
 import { useEffect } from "react";
 
 
-export function Display() {
+export function Display({ updateSong }) {
     const bannerRef = useRef(null);
     const currentPage = useLocation(); // gets the current path in pathname attribute
     const isUserOnAlbumPage = currentPage.pathname.includes("album");
-    console.log("CCC");
-    console.log(currentPage)
+    // console.log("CCC");
+    // console.log(currentPage)
 
     useEffect(() => {
         if (isUserOnAlbumPage) {
@@ -31,8 +31,7 @@ export function Display() {
         <div ref={bannerRef} className="w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml-0">
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path='/album/:id' element={<AlbumDetails />} />
-
+                <Route path='/album/:id' element={<AlbumDetails updateSong={updateSong} />} />
             </Routes>
         </div>
     )

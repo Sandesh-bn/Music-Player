@@ -2,15 +2,12 @@ import { Navbar } from "./Navbar";
 import { useParams } from 'react-router-dom';
 import { albumsData, songsData } from "../assets/assets.js";
 import { assets } from "../assets/assets.js";
-import { PlayerContext } from "../context/PlayerContext"
 import { useContext } from "react"
 
 
-export function AlbumDetails() {
+export function AlbumDetails({ updateSong }) {
     const { id } = useParams();
     const albumData = albumsData[id];
-        const { playWithId } = useContext(PlayerContext)
-    
     return (
         <>
             <Navbar />
@@ -37,7 +34,7 @@ export function AlbumDetails() {
             </div>
             <hr />
             {songsData.map((item, index) => (
-                <div onClick={()=>playWithId(item.id)}  key={item.id} className="grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 items-center text-[#a7a7a7] hover:bg-[#ffffff2b] cursor-pointer">
+                <div onClick={() => updateSong(item.id)} key={item.id} className="grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 items-center text-[#a7a7a7] hover:bg-[#ffffff2b] cursor-pointer">
                     <div className="text-white text-sm md:text-[15px]">
                         <b className="mr-4 text-[#a7a7a7]">{index + 1}</b>
                         <img className="inline w-10 mb-5 mr-5" src={item.image} alt={item.name} />
