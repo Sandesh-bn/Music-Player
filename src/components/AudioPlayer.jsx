@@ -13,6 +13,10 @@ export default function AudioPlayer({ currentSong }) {
     const [duration, setDuration] = useState(0);
     const [currentTime, setCurrentTime] = useState(0);
 
+    useEffect(()=>{
+        setCurrentTime(0);
+        progressRef.current.style.width = '0%'
+    },[])
     // Load metadata once
     useEffect(() => {
         const audio = audioRef.current;
