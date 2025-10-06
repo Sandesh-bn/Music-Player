@@ -3,7 +3,7 @@ import { AlbumCard } from "./AlbumCard";
 import { Navbar } from "./Navbar";
 import { SongCard } from "./SongCard";
 
-export function Home() {
+export function Home({ updateSong}) {
     return (
         <>
             <Navbar />
@@ -18,7 +18,7 @@ export function Home() {
                 <h1 className="my-5 font-bold text-2xl">Today's Most Popular Songs</h1>
                 <div className="flex overflow-auto">
                     {songsData.map((album, index) => (
-                        <SongCard key={index} id={index} image={album.image} name={album.name} desc={album.desc} />
+                        <SongCard updateSong={updateSong} key={index} id={index} image={album.image} name={album.name} desc={album.desc} />
                     ))}
                 </div>
             </div>

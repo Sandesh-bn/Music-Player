@@ -5,9 +5,10 @@ import { assets } from "../assets/assets.js";
 import { useContext } from "react"
 
 
-export function AlbumDetails({ updateSong }) {
+export function AlbumDetails({ updateSong, updateBackground }) {
     const { id } = useParams();
     const albumData = albumsData[id];
+    updateBackground(id)
     return (
         <>
             <Navbar />

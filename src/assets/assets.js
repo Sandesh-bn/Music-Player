@@ -22,6 +22,7 @@ import arrow_right from './right_arrow.png'
 import arrow_left from './left_arrow.png'
 import spotify_logo from './spotify_logo.png'
 import clock_icon from './clock_icon.png'
+import img0 from './img0.jpg'
 import img1 from './img1.jpg'
 import img2 from './img2.jpg'
 import img3 from './img3.jpg'
@@ -44,7 +45,8 @@ import song3 from  './song3.mp3'
 import song4 from  './song4.mp3'
 import song5 from  './song5.mp3'
 import song6 from  './song6.mp3'
-
+import song7 from  './song7.mp3'
+import song8 from  './song8.mp3'
 export const assets = {
     bell_icon,
     home_icon,
@@ -82,18 +84,12 @@ export const albumsData = [
     },
     {   
         id:1,
-        name: "Top 50 India",
-        image: img9,
+        name: "Top 10 Global",
+        image: img7,
         desc:"Your weekly update of the most played tracks",
         bgColor:"#22543d"
     },
-    {   
-        id:2,
-        name: "Trending India",
-        image: img10,
-        desc:"Your weekly update of the most played tracks",
-        bgColor:"#742a2a"
-    },
+    
     {   
         id:3,
         name: "Trending Global",
@@ -114,72 +110,100 @@ export const albumsData = [
         image: img15,
         desc:"Your weekly update of the most played tracks",
         bgColor:"#744210"
-    }
+    },
+    {   
+        id:2,
+        name: "Trending India",
+        image: img10,
+        desc:"Your weekly update of the most played tracks",
+        bgColor:"#742a2a"
+    },
+    {   
+        id:3,
+        name: "Trending Global",
+        image: img16,
+        desc:"Your weekly update of the most played tracks",
+        bgColor:"#44337a"
+    },
+    {   
+        id:4,
+        name: "Mega Hits,",
+        image: img5,
+        desc:"Your weekly update of the most played tracks",
+        bgColor:"#234e52"
+    },
+    {   
+        id:5,
+        name: "Happy Favorites",
+        image: img2,
+        desc:"Your weekly update of the most played tracks",
+        bgColor:"#744210"
+    },
 ]
 
 export const songsData = [
     {
         id:0,
-        name: "Kutti Story",
+        name: "Fade to Black",
         image: img1,
         file:song1,
-        desc:"Aniruth Ravichander,Thalapathy Vijay",
+        desc:"Ride the Ligthning - 1984",
         duration:"5:22"
     },
     {
         id:1,
-        name: "VIP Title Song",
+        name: "Smells Like Teen Spirit",
         image: img2,
         file:song2,
-        desc:"Anirudh Ravichander",
+        desc:"Nirvana",
         duration:"2:43"
     },
     {
         id:2,
-        name: "Dharala Prabhu Title Track",
+        name: "Despacito",
         image: img3,
         file:song3,
-        desc:"Anirudh Ravichander",
+        desc:"Luis Fonsi",
         duration:"3:42"
     },
     {
         id:3,
-        name: "Hukum-Thalaivar Alappara",
+        name: "Crazy Train",
         image: img4,
         file:song4,
-        desc:"Anirudh Ravichander,Super Subu",
+        desc:"Ozzy Osbourne",
         duration:"3:26"
     },
     {
         id:4,
-        name: "Illuminati",
+        name: "Roar",
         image: img5,
         file:song5,
-        desc:"Sushin Shyam, Dabzee, Vinayak Sasikumar",
+        desc:"Katie Perry",
         duration:"2:28"
     },
     {
         id:5,
-        name: "Idhazin Oram-The Innocence of Love",
+        name: "Mask Off",
         image: img6,
         file:song6,
-        desc:"Anirudh Ravichander,Ajesh",
+        desc:"Future",
         duration:"3:24"
     },
     {
         id:6,
-        name: "Vaathi Coming",
+        name: "Wood",
         image: img7,
-        file:song1,
-        desc:"Aniruth Ravichander,Thalapathy Vijay",
+        file:song7,
+        desc:"Taylor Swift",
         duration:"3:48"
     },
     {
         id:7,
-        name: "What a Karavaad",
-        image: img2,
-        file:song2,
-        desc:"Anirudh Ravichander,Dhanush",
+        name: "In the End",
+        image: img0,
+        file:song8,
+        desc:"Linkin Park",
         duration:"4:27"
     }
 ]
