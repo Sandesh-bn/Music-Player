@@ -1,16 +1,22 @@
-# React + Vite
+🎵 Spotify Clone – 30-Second Music Preview Player
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Spotify-inspired music player built with React, TailwindCSS, HTML, CSS, and JavaScript.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
 
-## React Compiler
+🎧 Play 30-second song previews using Spotify’s track preview URLs
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧭 Spotify-inspired UI with a modern, responsive design
 
-## Expanding the ESLint configuration
+⚡ Built with React + TailwindCSS for clean, component-based development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🖼️ Dynamic album artwork and track information display
+
+📱 Fully responsive design that adapts to desktop and mobile screens
+
+Future Enhancements
+
+Skip button
+
+Search bar. Currently spotify and shazam api doesn't offer mp3s in their apis due to copyright limits.
